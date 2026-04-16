@@ -2,10 +2,10 @@ package ar.edu.unahur.obj2.w2j.contenido;
 
 //PATRON SINGLETON
 public class IDRA {
-    private static final IDRA instance = new IDRA();
+    private static IDRA instance = new IDRA();
     private Double valor = 0.5;
     //Para crear una clase de una sola instancia hay que anular el contructor
-    public IDRA() {
+    private IDRA() {
     }
 
     //Esto devuelve siempre la primer instace
@@ -14,12 +14,12 @@ public class IDRA {
     }
 
     //Esto retorna el valor
-    public Double getValor() {
-        return valor;
-    }
+        public Double getValor() {
+            return valor;
+        }
 
-    //Para mantener la convencion colocamos un setter
-    public void setValor(Double nuevoValor) {
-        valor = nuevoValor;
-    }
+        //Para mantener la convencion colocamos un setter
+        public void setValor(Double nuevoValor) {
+            valor = nuevoValor;
+        }
 }
